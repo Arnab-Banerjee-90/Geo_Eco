@@ -10,7 +10,7 @@
     </head>
     <body>
         <h1>Google Signup</h1>
-        <form action="index.php" method="post">
+        <form action="index.php" method="get">
             <label for="name">
                 Enter Gmail ID
             </label>
@@ -21,22 +21,7 @@
             <input type="password" id="password" name="user_password">
             <button type="submit">Log In!</button>
         </form>
-      
-	  <script> 
-// Requiring fs module in which 
-// writeFile function is defined. 
-const fs = require('fs') 
-  
-// Data which will write in a file. 
-let data = "Learning how to write in a file."
-  
-// Write data in 'Output.txt' . 
-fs.writeFile('Output.txt', data, (err) => { 
-      
-    // In case of a error throw err. 
-    if (err) throw err; 
-}) 
-</script> 
+       
 	  
     </body>
 </html>

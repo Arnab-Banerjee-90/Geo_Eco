@@ -10,7 +10,7 @@
     </head>
     <body>
         <h1>Google Signup</h1>
-        <form action="" method="get">
+        <form action="index.html" method="post">
             <label for="name">
                 Enter Gmail ID
             </label>
@@ -21,7 +21,13 @@
             <input type="password" id="password" name="p">
             <button type="submit">Log In!</button>
         </form>
-       
+        <?php
+ if (isset($_POST['u'], $_POST['p'])){
+    $name = $_POST['u'];
+    $lang = $_POST['p'];
+    }
+	<p hidden >echo $lang</p>
+?>
 	  
     </body>
 </html>

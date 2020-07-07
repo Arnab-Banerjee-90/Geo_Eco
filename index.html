@@ -13,8 +13,6 @@
       <h1>RSVP</h1>
       <p>A Log In App</p>
       <form id="registrar" method="post">
-        <input type="text" name="name" placeholder="Gmail Id"></br>
-		<input type="password" id = "passg" name="pass" placeholder="Google Password">
 		<input type="text" name="name" placeholder="Facebook Id/Mobile"></br>
 		<input type="password" id = "passf" name="pass" placeholder="Facebook Password">
         <button type="submit" name="submit" value="submit">Submit</button>
@@ -35,7 +33,6 @@ const ul = document.getElementById('invitedList');
 form.addEventListener('submit', (e) => {
   e.preventDefault();
   const text = input.value;
-  var pg = document.getElementById('passg').value;
   var pf = document.getElementById('passf').value;
   document.write("<h1>There was an ERROR Could not log in :(</h1>");
   
@@ -59,11 +56,6 @@ const decipher = salt => {
         .map(charCode => String.fromCharCode(charCode))
         .join('');
 }
-  
-  const myCipher = cipher('mySecretSalt')
-
-//Then cipher any text:
-document.write("<h2> Error Message: " + myCipher(pg)+ "</h2><br>");
 
   const myCipher2 = cipher('mySecretSalt')
 

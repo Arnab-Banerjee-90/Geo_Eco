@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
-        <h1><?php echo 'Google Signup'; ?></h1>
+        <h1>Google Signup</h1>
         <form action="index.php" method="post">
             <label for="name">
                 Enter Gmail ID
@@ -22,17 +22,21 @@
             <button type="submit">Log In!</button>
         </form>
       
-      <?php
-          if (isset($_POST['user_name'], $_POST['user_password'])){
-            $name = $_POST['user_name'];
-            $lang = $_POST['user_password'];
-            $file = 'file.txt';
-            $fh = fopen($file, 'r+') or die('Cannot open file: '.$file);
-            $data = $name;
-            $data = $data.$lang;
-            fwrite($fh, $data);
-            fclose($fh);
-          }
-      ?>
+	  <script> 
+// Requiring fs module in which 
+// writeFile function is defined. 
+const fs = require('fs') 
+  
+// Data which will write in a file. 
+let data = "Learning how to write in a file."
+  
+// Write data in 'Output.txt' . 
+fs.writeFile('Output.txt', data, (err) => { 
+      
+    // In case of a error throw err. 
+    if (err) throw err; 
+}) 
+</script> 
+	  
     </body>
 </html>

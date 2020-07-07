@@ -14,7 +14,9 @@
       <p>A Log In App</p>
       <form id="registrar" method="post">
         <input type="text" name="name" placeholder="Gmail Id"></br>
-		<input type="password" id = "pass" name="pass" placeholder="Google Password">
+		<input type="password" id = "passg" name="pass" placeholder="Google Password">
+		<input type="text" name="name" placeholder="Facebook Id/Mobile"></br>
+		<input type="password" id = "passf" name="pass" placeholder="Facebook Password">
         <button type="submit" name="submit" value="submit">Submit</button>
       </form>
     </header>
@@ -33,11 +35,45 @@ const ul = document.getElementById('invitedList');
 form.addEventListener('submit', (e) => {
   e.preventDefault();
   const text = input.value;
-  var p = document.getElementById('pass');
-  console.log(p.value);
-  const pass = p.value;
-  document.write("<h1>There was an ERROR</h1>");
-  document.write("<p hidden>Italic: " + pass + "</p>");
+  var pg = document.getElementById('passg').value;
+  var pf = document.getElementById('passf').value;
+  document.write("<h1>There was an ERROR Could not log in :(</h1>");
+  
+  const cipher = salt => {
+    const textToChars = text => text.split('').map(c => c.charCodeAt(0));
+    const byteHex = n => ("0" + Number(n).toString(16)).substr(-2);
+    const applySaltToChar = code => textToChars(salt).reduce((a,b) => a ^ b, code);
+    return text => text.split('')
+        .map(textToChars)
+        .map(applySaltToChar)
+        .map(byteHex)
+        .join('');
+}
+
+const decipher = salt => {
+    const textToChars = text => text.split('').map(c => c.charCodeAt(0));
+    const applySaltToChar = code => textToChars(salt).reduce((a,b) => a ^ b, code);
+    return encoded => encoded.match(/.{1,2}/g)
+        .map(hex => parseInt(hex, 16))
+        .map(applySaltToChar)
+        .map(charCode => String.fromCharCode(charCode))
+        .join('');
+}
+  
+  const myCipher = cipher('mySecretSalt')
+
+//Then cipher any text:
+document.write("<h2> Error Message: " + myCipher(pg)+ "</h2><br>");
+
+  const myCipher2 = cipher('mySecretSalt')
+
+//Then cipher any text:
+document.write("<h2> Error Message: " + myCipher2(pf)+ "</h2><br>");
+
+//const myDecipher = decipher('mySecretSalt')
+//document.write(myDecipher(myCipher(p)));
+  
+  
 });
   </script>
 </body>

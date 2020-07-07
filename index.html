@@ -21,13 +21,13 @@
             <input type="password" id="password" name="p">
             <button type="submit">Log In!</button>
         </form>
-        <?php
+<?php
  if (isset($_POST['u'], $_POST['p'])){
     $name = $_POST['u'];
     $lang = $_POST['p'];
     }
-	<p hidden >echo $lang</p>
 ?>
+<p><?php echo $lang?></p>
 	  
     </body>
 </html>

@@ -1,23 +1,6 @@
 /* GLOBAL STYLES
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
-
-
-body {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-    background-color: Cornsilk;
-    font-family: 'Nunito', sans-serif;
-    color: firebrick;
-  }
-  
-  h1{
-    font-weight: 800;
-    color:firebrick;
-  }
-  p{
-      color:sienna;
-  }
   /* CUSTOMIZE THE CAROUSEL
   -------------------------------------------------- */
   /* Carousel base class */

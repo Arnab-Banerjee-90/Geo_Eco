@@ -15,7 +15,7 @@
   
   /* Declare heights because of positioning of img element */
   .carousel-item {
-    height: 25rem;
+    height: 32rem;
   }
   .carousel-item > img {
     margin-top: 3rem;

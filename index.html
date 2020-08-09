@@ -61,6 +61,9 @@
     transform: scaleX(1.05);
     border-radius: 5%;
   }
+  .col-lg-4{
+    mb-1;
+  }
 
 </style>
     <!-- Custom styles for this template -->
@@ -68,7 +71,7 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light fixed-top mb-3" style="background-color:aquamarine">
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top mb-3" style="background-color:azure">
         <div class="container">
           <a class="navbar-brand" href="#" style="color: firebrick; font-weight: 800;">
             <img src="logo.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
@@ -81,15 +84,21 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
               <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <span class="glyphicon glyphicon-search">Home</span>
+                <a class="nav-link" href="#course">
+                  <span class="glyphicon glyphicon-search">Course Structure</span>
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="#faculty">Our Faculty</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Disabled</a>
+                <a class="nav-link" href="#projects">Ongoing Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#skill">Student Skils</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact Us</a>
               </li>
             </ul>
           </div>
@@ -98,7 +107,7 @@
     </header>
 
 <main role="main">
-  <h1 class="text-center">Welcome to Jadavpur University, Control Systems Engineering Department</h1>
+  <h1 class="text-center lg">Welcome to Control Systems Engineering (JU)</h1>
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -107,18 +116,20 @@
     </ol>
     <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="images/slider_1.jpg" alt="">
-          <div class="carousel-caption text-left">
-            <h1 style="color:whitesmoke">About Jadavpur University</h1>
-            <p style="color:white">Jadavpur University is an internationally recognized, premier university of the country. It is dedicated to engaging the best expertise in science, technology, and management to provide a comprehensive platform to the students for developing their skills to envisage and execute projects in related fields</p>
-            <p class="text-muted">NIRF Rank 5th (University), 17th (Engineering)</p>
+          <div class="fill visible-xs-block visible-sm-block" style="background-image: url('images/ju_banner1.jpg');">
+            <div class="carousel-caption text-left">
+                <h2 class="display-4" style="color:white"></h2>
+                <p class="lead"></p>  
+            </div>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="images/slider_2.jpg" alt="">
+          <div class="fill visible-xs-block visible-sm-block" style="background-image: url('images/slider_1.jpg');">
+          </div>
         </div>
         <div class="carousel-item">
-          <img src="images/slider_3.jpg" alt="">
+          <div class="fill visible-xs-block visible-sm-block" style="background-image: url('images/slider_2.jpg');">
+          </div>
         </div>
       </div>
     </div>   
@@ -136,49 +147,6 @@
   <!-- Marketing messaging and featurettes
   ================================================== -->
   <!-- Wrap the rest of the page in another container to center all the content. -->
-
-  <div class="container marketing">
-
-    <!-- Three columns of text below the carousel -->
-    <div class="row">
-      <div class="col-lg-3 text-center">
-        <svg width="8em" height="5em" viewBox="0 0 16 16" class="bi bi-award" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd" d="M9.669.864L8 0 6.331.864l-1.858.282-.842 1.68-1.337 1.32L2.6 6l-.306 1.854 1.337 1.32.842 1.68 1.858.282L8 12l1.669-.864 1.858-.282.842-1.68 1.337-1.32L13.4 6l.306-1.854-1.337-1.32-.842-1.68L9.669.864zm1.196 1.193l-1.51-.229L8 1.126l-1.355.702-1.51.229-.684 1.365-1.086 1.072L3.614 6l-.25 1.506 1.087 1.072.684 1.365 1.51.229L8 10.874l1.356-.702 1.509-.229.684-1.365 1.086-1.072L12.387 6l.248-1.506-1.086-1.072-.684-1.365z"/>
-          <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z"/>
-        </svg>
-        <h2>Course Structure</h2>
-        <p>A post graduate program in Control System Engineering was started in 2007 as a multidisciplinary program.</p>
-        <p><a class="btn btn btn-outline-danger" href="#course" role="button">View details &raquo;</a></p>
-      </div><!-- /.col-lg-4 -->
-      <div class="col-lg-3 text-center">
-        <svg width="8em" height="5em" viewBox="0 0 16 16" class="bi bi-person-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-          <path d="M13.468 12.37C12.758 11.226 11.195 10 8 10s-4.757 1.225-5.468 2.37A6.987 6.987 0 0 0 8 15a6.987 6.987 0 0 0 5.468-2.63z"/>
-          <path fill-rule="evenodd" d="M8 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
-          <path fill-rule="evenodd" d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1zM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8z"/>
-        </svg>
-        <h2>Our Faculty</h2>
-        <p>A post graduate program in Control System Engineering was started in 2007 as a multidisciplinary program.</p>
-        <p><a class="btn btn btn-outline-danger" href="#faculty" role="button">View details &raquo;</a></p>
-      </div><!-- /.col-lg-4 -->
-      <div class="col-lg-3 text-center">
-        <svg width="8em" height="5em" viewBox="0 0 16 16" class="bi bi-book" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd" d="M3.214 1.072C4.813.752 6.916.71 8.354 2.146A.5.5 0 0 1 8.5 2.5v11a.5.5 0 0 1-.854.354c-.843-.844-2.115-1.059-3.47-.92-1.344.14-2.66.617-3.452 1.013A.5.5 0 0 1 0 13.5v-11a.5.5 0 0 1 .276-.447L.5 2.5l-.224-.447.002-.001.004-.002.013-.006a5.017 5.017 0 0 1 .22-.103 12.958 12.958 0 0 1 2.7-.869zM1 2.82v9.908c.846-.343 1.944-.672 3.074-.788 1.143-.118 2.387-.023 3.426.56V2.718c-1.063-.929-2.631-.956-4.09-.664A11.958 11.958 0 0 0 1 2.82z"/>
-          <path fill-rule="evenodd" d="M12.786 1.072C11.188.752 9.084.71 7.646 2.146A.5.5 0 0 0 7.5 2.5v11a.5.5 0 0 0 .854.354c.843-.844 2.115-1.059 3.47-.92 1.344.14 2.66.617 3.452 1.013A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.276-.447L15.5 2.5l.224-.447-.002-.001-.004-.002-.013-.006-.047-.023a12.582 12.582 0 0 0-.799-.34 12.96 12.96 0 0 0-2.073-.609zM15 2.82v9.908c-.846-.343-1.944-.672-3.074-.788-1.143-.118-2.387-.023-3.426.56V2.718c1.063-.929 2.631-.956 4.09-.664A11.956 11.956 0 0 1 15 2.82z"/>
-        </svg>
-        <h2>Ongoing Projects</h2>
-        <p>This section mentions in details about the various project work the students are invested in</p>
-        <p><a class="btn btn btn-outline-danger" href="#project" role="button">View details &raquo;</a></p>
-      </div><!-- /.col-lg-4 -->
-      <div class="col-lg-3 text-center">
-        <svg width="8em" height="5em" viewBox="0 0 16 16" class="bi bi-pencil" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd" d="M11.293 1.293a1 1 0 0 1 1.414 0l2 2a1 1 0 0 1 0 1.414l-9 9a1 1 0 0 1-.39.242l-3 1a1 1 0 0 1-1.266-1.265l1-3a1 1 0 0 1 .242-.391l9-9zM12 2l2 2-9 9-3 1 1-3 9-9z"/>
-          <path fill-rule="evenodd" d="M12.146 6.354l-2.5-2.5.708-.708 2.5 2.5-.707.708zM3 10v.5a.5.5 0 0 0 .5.5H4v.5a.5.5 0 0 0 .5.5H5v.5a.5.5 0 0 0 .5.5H6v-1.5a.5.5 0 0 0-.5-.5H5v-.5a.5.5 0 0 0-.5-.5H3z"/>
-        </svg>
-        <h2>Student Skill sets</h2>
-        <p>This section mentions all the analytical, hardware and software skill in our students arsenal</p>
-        <p><a class="btn btn btn-outline-danger" href="#skill" role="button">View details &raquo;</a></p>
-      </div><!-- /.col-lg-4 -->
-    </div><!-- /.row -->
 
 <hr>
     <!-- START THE FEATURETTES -->
@@ -277,7 +245,7 @@
 <div class="container faculty" id="faculty">
   <h1 class="text-center mt-5 mb-5">Our Faculty</h2>
   <div class="row">
-    <div class="col-lg-3">
+    <div class="col-lg-3 mb-1">
       <div class="card">
         <div class="card-body">
           <h5 class="card-title">Dr. Ranjit Kumar Barai</h5>
@@ -286,7 +254,7 @@
         </div>
       </div>
     </div>
-    <div class="col-lg-3">
+    <div class="col-lg-3 mb-1">
       <div class="card">
         <div class="card-body">
           <h5 class="card-title">Dr. Smita Sadhu</h5>
@@ -295,7 +263,7 @@
         </div>
       </div>
     </div>
-    <div class="col-lg-3">
+    <div class="col-lg-3 mb-1">
       <div class="card">
         <div class="card-body">
           <h5 class="card-title">Dr. Madhubanti Maitra</h5>
@@ -304,7 +272,7 @@
         </div>
       </div>
     </div>
-    <div class="col-lg-3">
+    <div class="col-lg-3 mb-1">
       <div class="card">
         <div class="card-body">
           <h5 class="card-title">Dr. Sayantan Chakraborty</h5>
@@ -415,7 +383,7 @@
 <div class="container skill" id="skill">
   <h1 class="text-center mt-5 mb-5">Student Skillset</h2>
   <div class="row text-center">
-    <div class="col-lg-6">
+    <div class="col-lg-5 m-1">
       <div class="card">
         <div class="card-body">
           <h5 class="card-title">Technical Skills</h5>
@@ -430,7 +398,7 @@
         </ul>
       </div>
     </div>
-    <div class="col-lg-6">
+    <div class="col-lg-5 m-1">
       <div class="card">
         <div class="card-body">
           <h5 class="card-title">Computer Proficiency/Programming</h5>

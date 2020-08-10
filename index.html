@@ -55,14 +55,10 @@
   }
   .card{
     transition-duration: 250ms;
+    margin-bottom: 1rem;
   }
   .card:hover{
-    transform: scaleY(1.05);
-    transform: scaleX(1.05);
-    border-radius: 5%;
-  }
-  .col-lg-4{
-    mb-1;
+    box-shadow: 3px 7px;
   }
 
 </style>
@@ -92,7 +88,7 @@
                 <a class="nav-link" href="#faculty">Our Faculty</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#projects">Ongoing Projects</a>
+                <a class="nav-link" href="#project">Ongoing Projects</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#skill">Student Skils</a>
@@ -151,13 +147,13 @@
 <hr>
     <!-- START THE FEATURETTES -->
     <div class="container course_structure" id="course">
-      <h1 class="text-center mt-5 mb-5">MCSE Course Structure</h2>
-      <div class="row">
+      <h1 class="text-center mt-3 mb-3">Control Systems Course Structure</h2>
+      <div class="row mb-2">
         <div class="col-lg-4">
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">Classical Control Systems</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Fundamentals of Control System Engineering</h6>
+              <h6 class="card-subtitle text-muted">Fundamentals of Control System Engineering</h6>
               <p class="card-text">Deals with linear control techniques, with application in rudimentary systems</p>
             </div>
           </div>
@@ -166,8 +162,8 @@
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">Modelling and Simulation</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <h6 class="card-subtitle text-muted">Mathematical representation of physical systems</h6>
+              <p class="card-text">Modelling of complex sytems, using a mathematical model and its analysis</p>
             </div>
           </div>
         </div>
@@ -175,19 +171,19 @@
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">Non-Linear Control Systems</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <h6 class="card-subtitle text-muted">Tackling Non-linearities of Physical Systems</h6>
+              <p class="card-text">Application of Control System techniques to systems with non-linearities</p>
             </div>
           </div>
         </div>
       </div>
-      <div class="row">
+      <div class="row mb-2">
         <div class="col-lg-4">
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">Advanced Industrial Control</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Fundamentals of Control System Engineering</h6>
-              <p class="card-text">Deals with linear control techniques, with application in rudimentary systems</p>
+              <h6 class="card-subtitle text-muted">Control techniques used in industrial process</h6>
+              <p class="card-text"></p>
             </div>
           </div>
         </div>
@@ -195,7 +191,7 @@
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">Digital Control Systems</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+              <h6 class="card-subtitle text-muted">Card subtitle</h6>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             </div>
           </div>
@@ -204,18 +200,18 @@
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">Artificial Intelligence & Soft Computing</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+              <h6 class="card-subtitle text-muted">Card subtitle</h6>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             </div>
           </div>
         </div>
       </div>
-      <div class="row">
+      <div class="row mb-2">
         <div class="col-lg-4">
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">Adaptive Control</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Fundamentals of Control System Engineering</h6>
+              <h6 class="card-subtitle text-muted">Fundamentals of Control System Engineering</h6>
               <p class="card-text">Deals with linear control techniques, with application in rudimentary systems</p>
             </div>
           </div>
@@ -224,7 +220,7 @@
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">Optimal and Robust Control</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+              <h6 class="card-subtitle text-muted">Card subtitle</h6>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             </div>
           </div>
@@ -233,7 +229,7 @@
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">Mechatronics</h5>
-              <h6 class="card-subtitle mb-2 text-muted"></h6>
+              <h6 class="card-subtitle text-muted"></h6>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             </div>
           </div>
@@ -382,8 +378,8 @@
 
 <div class="container skill" id="skill">
   <h1 class="text-center mt-5 mb-5">Student Skillset</h2>
-  <div class="row text-center">
-    <div class="col-lg-5 m-1">
+  <div class="row text-center mb-1">
+    <div class="col-lg-6">
       <div class="card">
         <div class="card-body">
           <h5 class="card-title">Technical Skills</h5>
@@ -398,7 +394,7 @@
         </ul>
       </div>
     </div>
-    <div class="col-lg-5 m-1">
+    <div class="col-lg-6">
       <div class="card">
         <div class="card-body">
           <h5 class="card-title">Computer Proficiency/Programming</h5>
